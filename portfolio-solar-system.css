@@ -1,0 +1,525 @@
+*{
+  box-sizing: border-box;
+}
+ 
+body{
+  margin: 0 auto;
+  /* make sure it occupies at least the whole height of the browser */
+  min-height: 100vh;
+  
+  background-color: black;
+  background-image:url(img/pixel-stars-gif-4.gif);
+}
+
+.solarsystem {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 50px;
+  margin-left: 20%;
+}
+
+.sun{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  
+  position: relative;
+  background-image: url(img/Planets-01.png);
+}
+
+
+.mercury{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+
+
+  background-image: url(img/Planets-02.png);
+  
+  margin-left: 10px;
+  
+  transform-origin: -85px;
+
+  animation-name: orbit;
+  animation-duration: 8.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.venus{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  background-image: url(img/Planets-03.png);
+  
+  margin-left: 10px;
+  
+  transform-origin: -100px;
+
+  animation-name: orbit;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.earth{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+  background-image: url(img/Planets-04.png);
+  
+  margin-left: 10px;
+  
+  transform-origin: -130px;
+
+  animation-name: orbit;
+  animation-duration: 22s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.moon{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  
+  background-color: floralwhite;
+  
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  
+  transform-origin: 12px 12px;
+
+  animation-name: orbit;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.mars{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+  background-image: url(img/Planets-05.png);
+  
+  margin-left: 10px;
+  
+  transform-origin: -158px;
+
+  animation-name: orbit;
+  animation-duration: 37s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.jupiter{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-image: url(img/Planets-06.png);
+  
+  margin-left: 40px;
+  
+  transform-origin: -213px;
+
+  animation-name: orbit;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.saturn{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  
+  margin-left: 10px;
+  
+  transform-origin: -283px;
+
+  animation-name: orbit;
+  animation-duration: 153.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.saturn-rings{
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+  
+  border: 5px solid rgba(245, 245, 220, 0.7);
+  box-shadow: 0 0 10px rgba(245, 245, 220, 1);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saturn-heart{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  
+  background-image: url(img/Planets-07.png);
+
+  background-color: burlywood;
+}
+
+.uranus{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-image: url(img/Planets-08.png);
+  box-shadow: 0 0 20px rgba(75, 100, 157, 1);
+  
+  margin-left: 10px;
+  
+  transform-origin: -373px;
+
+  animation-name: orbit;
+  animation-duration: 222.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.neptune{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  background-image: url(img/Planets-09.png);
+  
+  margin-left: 10px;
+  
+  transform-origin: -423px;
+
+  animation-name: orbit;
+  animation-duration: 318s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+
+/* animation */
+
+@keyframes orbit{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/* orbits */
+
+.orbit-mercury{
+  position: absolute;
+  top: -11.5px;
+  left: -11.5px;
+  
+  width: 173px;
+  height: 173px;
+  border-radius: 50%;
+
+  border: 1px dashed white;
+  opacity: 0.5;
+}
+
+.orbit-venus{
+  position: absolute;
+  top: -35px;
+  left: -35px;
+  
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+
+  border: 1px dashed white;
+  opacity: 0.5;
+}
+
+.orbit-earth{
+  position: absolute;
+  top: -65px;
+  left: -65px;
+  
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+
+  border: 1px solid white;
+  opacity: 0.5; 
+}
+
+.orbit-mars{
+  position: absolute;
+  top: -90px;
+  left: -90px;
+  
+  width: 330px;
+  height: 330px;
+  border-radius: 50%;
+
+  border: 1px dashed white;
+  opacity: 0.5; 
+}
+
+.asteroids{
+  position: absolute;
+  top: -135px;
+  left: -135px;
+  
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  
+  background-image: url(img/Asteroids-10.png);
+  background-size: cover;
+  
+  animation-name: orbit;
+  animation-duration: 700s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.orbit-jupiter{
+  position: absolute;
+  top: -170px;
+  left: -170px;
+  
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+
+  border: 1px dashed white;
+  opacity: 0.5; 
+}
+
+.orbit-saturn{
+  position: absolute;
+  top: -240px;
+  left: -240px;
+  
+  width: 630px;
+  height: 630px;
+  border-radius: 50%;
+
+  border: 1px solid white;
+  opacity: 0.5; 
+}
+
+.orbit-uranus{
+  position: absolute;
+  top: -317.2px;
+  left: -317.2px;
+  
+  width: 785px;
+  height: 785px;
+  border-radius: 50%;
+
+  border: 1px dashed white;
+  opacity: 0.5; 
+}
+
+.orbit-neptune{
+  position: absolute;
+  top: -362.2px;
+  left: -362.2px;
+  
+  width: 875px;
+  height: 875px;
+  border-radius: 50%;
+
+  border: 1px dashed white;
+  opacity: 0.5; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* style from general css */
+
+body{
+  margin: 0 auto;
+  min-width: 400px;
+  
+  font-family: sans-serif;
+}
+
+header{
+  height: 60px;
+  width: 100%;
+    
+  background-color: rgb(255, 255, 255, 0.8);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  
+  position: fixed;
+  
+  z-index: 20;
+}
+
+footer{
+  text-align: center;
+  
+  margin-top: 120px;
+  
+  opacity: 0.8;
+}
+
+
+/* elements */
+
+.logo{
+  width: 30px;
+  height: auto;
+  
+  position: absolute;
+  left: 50px;
+  top: 10px;
+}
+
+.proj-header{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 100%;
+  
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TYPOGRAPHY */
+
+h1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  
+  text-decoration: underline;
+}
+
+h2{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  
+  font-size: 1.2em;
+  text-align: center;
+}
+
+p{
+  width: 60%;
+  font-family: 'Quicksand', sans-serif;
+  
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+
+h3{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  
+  font-size: 1.7em;
+  text-align: center;
+  
+  color: #aaa;
+  text-decoration: underline;  
+  
+  padding: 30px;
+}
+
+
+h4{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+h5{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  letter-spacing: 5px;
+  
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+.white{
+  color: white;
+}
+
+
+/* LIST-LINKS */
+
+
+ul{
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  line-height: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  
+  margin-right: 30px;
+}
+
+li:hover{
+  text-decoration: underline;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 530px) {
+  nav {
+      display: none;
+  }
+}

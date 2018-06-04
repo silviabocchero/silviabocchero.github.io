@@ -1,0 +1,324 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+} 
+ 
+body{
+  margin: 0 auto;
+  min-width: 400px;
+  
+  font-family: sans-serif;
+}
+
+header{
+  height: 60px;
+  width: 100%;
+    
+  box-shadow: 0 5px 10px rgb(0,0,0,0.1);
+  background-color: white;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  
+  position: fixed;
+}
+
+footer{
+  text-align: center;
+  padding: 10px;
+  
+  border-top: 2px solid black;
+}
+
+
+
+/* MAIN SECTIONS */
+
+section{
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+  padding: 30px 0 30px 0;
+}
+
+
+/* elements */
+
+.logo{
+  width: 30px;
+  height: auto;
+  
+  position: absolute;
+  left: 50px;
+  top: 10px;
+}
+
+.proj-header{
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 100%;
+  
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* half half, 40% */
+
+.half-text{
+  width: 40%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.half-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  width: 40%;
+  height: auto;
+}
+
+/* bigger img, 60% 40% */
+
+.smaller-text{
+  width: 40%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigger-img{  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  width: 60%;
+  height: auto;
+}
+
+/* single images / bg image options */
+
+.responsive-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  width: 100%;
+  height: auto;
+}
+
+.centered-img{
+  width: 50%;
+  height: auto;
+}
+
+.bg-img{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  width: 100%;
+  height: auto;
+}
+
+
+/* displaying website mockups */
+
+.website-pages-container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.website-page-desktop{
+  width: 40%;
+  height: auto;
+  
+  align-items: flex-start;
+  
+  box-shadow: 0 5px 10px rgb(0,0,0,0.1);
+}
+
+.website-page-mobile{
+  width: 17%;
+  height: auto;
+  
+  align-items: flex-start;
+  
+  box-shadow: 0 5px 10px rgb(0,0,0,0.1);
+}
+
+
+
+/* TYPOGRAPHY */
+
+h1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  
+  text-decoration: underline;
+}
+
+h2{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  
+  font-size: 1.2em;
+  text-align: center;
+}
+
+p{
+  width: 60%;
+  font-family: 'Quicksand', sans-serif;
+  
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+
+h3{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  
+  font-size: 1.7em;
+  text-align: center;
+  
+  color: #aaa;
+  text-decoration: underline;  
+  
+  padding: 30px;
+}
+
+
+h4{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+h5{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+
+
+/* LIST-LINKS */
+
+
+ul{
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  line-height: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  
+  margin-right: 30px;
+}
+
+li:hover{
+  text-decoration: underline;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    padding: 20px 0 20px 0;
+    
+    border-bottom: 1px solid #eee;
+  }
+  .container p{
+    margin-top: 50px;
+    width: 60%;
+  }
+  .bigger-img{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .half-img{
+    width: 80%;
+    margin-top: 20px;
+  }
+  .half-text{
+    width: 90%;
+    justify-content: center;
+    order: -1;
+  }
+  .half-text p{
+    width: 80%;
+    margin: 0;
+  }
+  .smaller-text{
+    width: 90%;
+    justify-content: center;
+    order: -1;
+  }
+  .smaller-text p{
+    width: 80%;
+    margin: 0;
+  }
+  .centered-img{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  nav {
+      display: none;
+  }
+  .responsive-img{
+    height: 700px;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+  }
+  .half-img{
+    width: 100%;
+  }
+  .centered-img{
+    width: 100%;
+  }
+}

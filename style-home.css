@@ -14,7 +14,7 @@ body{
 }
 
 header{
-  height: 100vh;
+  height: 100%;
   width: 100px;
   
   font-family: 'Barlow Condensed', sans-serif;
@@ -68,6 +68,7 @@ footer{
   transform: rotate(-90deg);
 }
 
+
 /* sections */
 
 section{
@@ -108,9 +109,10 @@ section{
 
 .projects-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  
+  flex-flow: row wrap;
+    
   width: 80%;
 }
 
@@ -119,7 +121,96 @@ section{
   height: 300px;
   
   background-color: #eee;
+  
+  margin: 15px;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  padding-top: 5px;
 }
+
+.projects-box:hover{
+  width: 320px;
+  height: 320px;
+  margin: 5px;
+}
+
+.projects-box-thetrumpet{
+  background-image:url(img/Website-02.png);
+}
+
+.projects-box-enroute{
+  background-image: url(img/enroute.png);
+}
+
+.projects-box-solarsystem{
+  background-image: url(img/stars3.gif);
+}
+
+/* contacts page + SOCIALS */
+
+.contacts-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  background-image: url(img/Socials/socials-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts-socials-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+  
+  margin-top: 20px;
+}
+
+.contacts-container i{
+  font-size: 1.2em;
+  margin: 0 30px 0 30px;
+}
+
+.contacts-container i:hover{
+  color: #ff7265;
+}
+
+.contacts-container a{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  font-size: 1em;
+}
+
+.contacts-container a:hover{
+  text-decoration: underline;
+  color: #ff7265;
+}
+
+/* about page */
+
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+  padding: 50px 0 50px 0;
+  margin-bottom: 50px;
+}
+
+.about-img{
+  width: 70%;
+  height: auto;
+}
+
+
 
 /* TEXT */
 
@@ -174,7 +265,7 @@ p{
 .proj-info p{
   font-size: 0.9em;
   line-height: 1.8em;
-}
+} 
 
 h3{
   font-family: 'Barlow Condensed', sans-serif;
@@ -244,4 +335,8 @@ li:hover{
   nav {
       display: none;
   }
+}
+
+.white{
+  color: white;
 }

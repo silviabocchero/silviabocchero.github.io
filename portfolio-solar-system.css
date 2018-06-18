@@ -411,6 +411,24 @@ footer{
   top: 10px;
 }
 
+.logo-2{
+  width: 120px;
+  height: auto;
+  
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+
+.logo-3{
+  width: 120px;
+  height: auto;
+  
+  position: absolute;
+  left: 50px;
+  top: 15px;
+}
+
 .proj-header{
   padding-top: 100px;
   padding-bottom: 50px;

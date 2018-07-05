@@ -8,7 +8,7 @@ body{
   min-height: 100vh;
   
   background-color: black;
-  background-image:url(img/pixel-stars-gif-4.gif);
+  background-image:url(img/projects-solarsystem/stars-gif-2.gif);
 }
 
 .solarsystem {
@@ -19,7 +19,7 @@ body{
   align-items: center;
   
   margin-top: 50px;
-  margin-left: 20%;
+  margin-left: 380px ;
 }
 
 .sun{
@@ -28,7 +28,7 @@ body{
   border-radius: 50%;
   
   position: relative;
-  background-image: url(img/Planets-01.png);
+  background-image: url(img/projects-solarsystem/Planets-01.png);
 }
 
 
@@ -38,7 +38,7 @@ body{
   border-radius: 50%;
 
 
-  background-image: url(img/Planets-02.png);
+  background-image: url(img/projects-solarsystem/Planets-02.png);
   
   margin-left: 10px;
   
@@ -55,7 +55,7 @@ body{
   height: 20px;
   border-radius: 50%;
 
-  background-image: url(img/Planets-03.png);
+  background-image: url(img/projects-solarsystem/Planets-03.png);
   
   margin-left: 10px;
   
@@ -72,7 +72,7 @@ body{
   height: 18px;
   border-radius: 50%;
 
-  background-image: url(img/Planets-04.png);
+  background-image: url(img/projects-solarsystem/Planets-04.png);
   
   margin-left: 10px;
   
@@ -108,7 +108,7 @@ body{
   height: 15px;
   border-radius: 50%;
 
-  background-image: url(img/Planets-05.png);
+  background-image: url(img/projects-solarsystem/Planets-05.png);
   
   margin-left: 10px;
   
@@ -125,7 +125,7 @@ body{
   height: 60px;
   border-radius: 50%;
 
-  background-image: url(img/Planets-06.png);
+  background-image: url(img/projects-solarsystem/Planets-06.png);
   
   margin-left: 40px;
   
@@ -170,7 +170,7 @@ body{
   height: 45px;
   border-radius: 50%;
   
-  background-image: url(img/Planets-07.png);
+  background-image: url(img/projects-solarsystem/Planets-07.png);
 
   background-color: burlywood;
 }
@@ -180,7 +180,7 @@ body{
   height: 40px;
   border-radius: 50%;
 
-  background-image: url(img/Planets-08.png);
+  background-image: url(img/projects-solarsystem/Planets-08.png);
   box-shadow: 0 0 20px rgba(75, 100, 157, 1);
   
   margin-left: 10px;
@@ -198,7 +198,7 @@ body{
   height: 30px;
   border-radius: 50%;
 
-  background-image: url(img/Planets-09.png);
+  background-image: url(img/projects-solarsystem/Planets-09.png);
   
   margin-left: 10px;
   
@@ -287,7 +287,7 @@ body{
   height: 420px;
   border-radius: 50%;
   
-  background-image: url(img/Asteroids-10.png);
+  background-image: url(img/projects-solarsystem/Asteroids-10.png);
   background-size: cover;
   
   animation-name: orbit;

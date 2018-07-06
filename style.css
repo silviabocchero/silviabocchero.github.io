@@ -131,6 +131,10 @@ section{
 }
 
 /* single images / bg image options */
+.proj-img img {
+  width: 100%;
+  height: auto;
+}
 
 .responsive-img-desktop{
   background-repeat: no-repeat;

@@ -24,6 +24,7 @@ header{
   position: fixed;
 }
 
+
 nav{
   height: 100vh;
   width: 100px;
@@ -62,6 +63,10 @@ footer{
   position: absolute;
   left: 50px;
   top: 20px;
+}
+
+.hamburger{
+  width: 
 }
 
 .rotate90{
@@ -273,24 +278,6 @@ section{
   opacity: 0;
 }
 
-.h1-projects{
-  font-size: 5em;
-  line-height: 1em;
-  
-  font-style: italic;
-  text-decoration: none;
-  color: white;
-  
-  margin: 0;
-}
-
-.p-projects{
-  color: white;
-  font-size: 0.7em;
-  letter-spacing: 3px;
-  
-  margin-left: 15px;
-}
 
 .projects-box-v-img-hover:hover{
   opacity: 1;
@@ -467,6 +454,26 @@ h5{
   line-height: 1.8em;
 }
 
+.h1-projects{
+  font-size: 5em;
+  line-height: 1em;
+    
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  
+  margin: 0;
+}
+
+.p-projects{
+  color: white;
+  font-size: 0.7em;
+  letter-spacing: 3px;
+  
+  margin-left: 15px;
+}
+
+
 
 /* LIST-LINKS */
 
@@ -501,6 +508,22 @@ li:hover{
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 530px) {
+  
+  /* HEADERRR */
+  
+  header{
+    width: 100%;
+    height: 60px;
+    
+    background-color: aqua;
+    z-index: 30;
+  }
+  
+  .logo-2{
+    top:15px;
+    left: 15px;
+  }
+  
   nav {
       display: none;
   }
@@ -514,15 +537,7 @@ li:hover{
     align-items: flex-start;
     padding-top: 100px;
   }
-  .projects-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-
-    width: 90%;
-    height: 50%;
-  }
+  
   .projects-container{
     flex-flow: column wrap;
     align-items: flex-start;
@@ -533,6 +548,7 @@ li:hover{
     padding: 0;
     margin: 0;
     }
+  
   .projects-box-v{
     width: 100vw;
     height: 720px;
@@ -545,6 +561,7 @@ li:hover{
     width: 100%;
     height: 700px;
   }
+  
   .projects-box-h{
     width: 100vw;
     height: 720px;
@@ -556,7 +573,22 @@ li:hover{
     width: 100%;
     height: 700px;
   }
-}
+  
+  .projects-box-v-hover{
+    display: none;
+    opacity: 0;
+  }
+  .projects-box-v-img-hover:hover{
+  opacity: 0;
+  }
+  .projects-box-h-hover{
+    display: none;
+    opacity: 0;
+  }
+  .projects-box-h-img-hover:hover{
+  opacity: 0;
+  }
+
 
 .white{
   color: white;

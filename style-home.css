@@ -56,10 +56,12 @@ footer{
   top: 15px;
 }
 
-.logo-2{
-  width: 130px;
-  height: auto;
+
+.logo-link {
+  display: block;
   
+  width: 130px;
+    
   position: absolute;
   left: 50px;
   top: 20px;
@@ -67,6 +69,20 @@ footer{
   z-index: 20;
 }
 
+.logo-link img {
+  width: 100%;
+  height: auto;
+}
+  
+
+@media screen and (max-width: 530px) {
+  .logo-link{
+    top: 15px;
+    left: auto;
+    right: 20px;
+  }   
+}
+  
 
 
 
@@ -267,6 +283,12 @@ section{
   height: auto;
   position: absolute;
   top: 20;
+}
+
+@media screen and (max-width: 530px) {
+  .home-gif{
+    width: 100%;
+  }
 }
 
 
@@ -558,6 +580,13 @@ h1{
   text-decoration: none;
 }
 
+@media screen and (max-width: 800px) {
+  .h1-homepage{
+    text-align: center;
+    padding: 0 60px;
+  }
+}
+
 .h1-margin{
   margin-bottom: 50px;
 }
@@ -689,12 +718,6 @@ li:hover{
     background-color: rgb(255, 255, 255, 0.9);
     border-bottom: 1px solid black;
     z-index: 30;
-  }
-  
-  .logo-2{
-    top: 15px;
-    left: auto;
-    right: 20px;
   }
   
   .nav-desktop{

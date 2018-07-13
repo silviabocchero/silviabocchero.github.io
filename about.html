@@ -26,12 +26,50 @@
   <header>
     <a href="index.html"><img class="logo-2" src="img/logo-style02.png" alt="Logo Silvia Bocchero" height="408" width="104"></a>
     
-    <nav>
+    <nav class="nav-desktop">
       <ul>
         <li><a href="projects.html">PROJECTS</a></li>
         <li class="rotate90"><a href="about.html"><strong>&#9679;<br>ABOUT</strong></a></li>
         <li><a href="contacts.html">CONTACTS</a></li>
       </ul>
+    </nav>
+    
+    <nav role="navigation" class="nav-mobile">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="index.html" class="a-nav-mobile"><li>Home</li></a>
+          <a href="projects.html" class="a-nav-mobile"><li>Projects</li></a>
+          <a href="about.html" class="a-nav-mobile"><li>About</li></a>
+          <a href="contacts.html" class="a-nav-mobile"><li>Contacts</li></a>
+          
+          <section class="menu-contacts-socials-container">
+            <a href="https://www.behance.net/silviabocchero"><i class="fab fa-behance"></i></a>
+            <a href="https://www.facebook.com/solebianco.sb/?ref=bookmarks"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/solebianco.sb/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/silvia-bocchero-6a414b151/"><i class="fab fa-linkedin-in"></i></a>
+          </section>
+        </ul>
+      </div>
     </nav>
     
   </header>
@@ -41,7 +79,6 @@
   </main>
   
   <section class="projects">
-    <h1 class="h1-margin">Something About Me</h1>
   
   <section class="about">
     <img class="about-img" src="img/who-01.jpg" alt="Infos" height="4361" width="6768">

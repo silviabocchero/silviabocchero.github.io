@@ -195,13 +195,13 @@ footer{
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
+#menu {
   position: relative;
-  width: 300px;
+  width: 100vw;
+  height: 100vh;
+  
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 160px;
+  padding: 160px 0 0 60px;
   
   background: white;
   box-shadow: rgba(0,0,0,1);
@@ -213,6 +213,10 @@ footer{
   transform: translate(-100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;  
 }
 
 #menu li
@@ -533,7 +537,7 @@ section{
 
   height: auto;
   
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .menu-contacts-socials-container i{

@@ -11,7 +11,7 @@ body{
   min-width: 400px;
   height: auto;
   
-  font-family: sans-serif;
+  font-family: monospace;
 }
 
 header{
@@ -35,6 +35,76 @@ header{
 footer{
   text-align: center;
   border-top: 2px solid black;
+}
+
+main
+
+
+/* TYPOGRAPHY */
+
+h1{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+  
+  text-decoration: underline;
+}
+
+h2{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  
+  font-size: 1.2em;
+  text-align: center;
+}
+
+p{
+  width: 60%;
+  font-family: 'Quicksand', sans-serif;
+  
+  font-size: 0.9em;
+  line-height: 1.8em;
+}
+
+h3{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  
+  font-size: 1.7em;
+  text-align: center;
+  
+  color: #aaa;
+  text-decoration: underline;  
+  
+  padding: 30px;
+}
+
+
+h4{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+h5{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+h6{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+  
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
 
 
@@ -73,7 +143,9 @@ section{
   top: 10px;
 }
 
-.proj-header{
+.main-header{
+  position: absolute;
+  
   padding-top: 100px;
   padding-bottom: 50px;
   width: 100%;
@@ -82,8 +154,37 @@ section{
   
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
+
+.main-img{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-img img {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -20;
+}
+
+main h1{
+  font-family: 'Anonymous Pro', monospace;
+  width: 50%;
+
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 10em;
+  text-align: left;
+  
+  text-decoration: none;
+}
+
+
 
 .white{
   color: white;
@@ -194,74 +295,6 @@ section{
   align-items: flex-start;
   
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-}
-
-
-/* TYPOGRAPHY */
-
-h1{
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
-  letter-spacing: 2px;
-  
-  text-decoration: underline;
-}
-
-h2{
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 200;
-  letter-spacing: 2px;
-  
-  font-size: 1.2em;
-  text-align: center;
-}
-
-p{
-  width: 60%;
-  font-family: 'Quicksand', sans-serif;
-  
-  font-size: 0.9em;
-  line-height: 1.8em;
-}
-
-h3{
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 200;
-  letter-spacing: 2px;
-  
-  font-size: 1.7em;
-  text-align: center;
-  
-  color: #aaa;
-  text-decoration: underline;  
-  
-  padding: 30px;
-}
-
-
-h4{
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.1em;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
-
-h5{
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 500;
-  letter-spacing: 5px;
-  
-  font-size: 1em;
-  line-height: 1.8em;
-}
-
-h6{
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 500;
-  letter-spacing: 5px;
-  
-  font-size: 0.8em;
-  line-height: 1.5em;
 }
 
 

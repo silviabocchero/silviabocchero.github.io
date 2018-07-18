@@ -22,7 +22,7 @@ header{
   background-color: white;
   
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   
   font-family: 'Barlow Condensed', sans-serif;
@@ -30,14 +30,17 @@ header{
   letter-spacing: 2px;
   
   position: fixed;
+  
+  z-index: 35;
 }
 
 footer{
   text-align: center;
-  border-top: 2px solid black;
 }
 
-main
+main{
+  height: 100vh;
+}
 
 
 /* TYPOGRAPHY */
@@ -51,7 +54,7 @@ h1{
 }
 
 h2{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   font-weight: 200;
   letter-spacing: 2px;
   
@@ -61,10 +64,10 @@ h2{
 
 p{
   width: 60%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   
-  font-size: 0.9em;
-  line-height: 1.8em;
+  font-size: 0.8em;
+  line-height: 1.7em;
 }
 
 h3{
@@ -80,7 +83,6 @@ h3{
   
   padding: 30px;
 }
-
 
 h4{
   font-family: 'Barlow Condensed', sans-serif;
@@ -100,13 +102,19 @@ h5{
 
 h6{
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 500;
+  font-weight: 00;
   letter-spacing: 5px;
   
   font-size: 0.8em;
   line-height: 1.5em;
 }
 
+h7{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.8;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
 
 
 /* MAIN SECTIONS */
@@ -143,18 +151,22 @@ section{
   top: 10px;
 }
 
+
+/* header */
+
 .main-header{
   position: absolute;
   
-  padding-top: 100px;
-  padding-bottom: 50px;
+  padding: 100px 0 50px 30px;
+
   width: 100%;
   
   text-align: center;
   
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .main-img{
@@ -170,19 +182,112 @@ section{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -20;
+  
+  opacity: 0.5;
+}
+
+.main-header-pagename{
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  
+  color: grey;
+  letter-spacing: 3px;
+}
+
+.main-titles{
+  width: 450px;
+  padding-left: 30px;
 }
 
 main h1{
   font-family: 'Anonymous Pro', monospace;
-  width: 50%;
-
-  font-weight: 100;
+  
+  font-weight: bold;
   letter-spacing: 2px;
-  font-size: 10em;
+  font-size: 8.5em;
   text-align: left;
   
   text-decoration: none;
+  
+  margin-top: 0;
+  margin-bottom: 30px;
 }
+
+.main-h1-secondary{
+  font-weight: 100;
+  font-size: 6.5em;
+  line-height: 0.8em;
+}
+
+main h2{
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.main-infos-d{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-infos-m{
+  display: flex;
+  flex-direction: row;
+  display: none;
+  
+  width: 100%;
+  height: auto;
+  background-color: red;
+  
+  padding-left: 40px;
+}
+
+.main-infos-box{
+  text-align: left;
+  width: 200px;
+  height: auto;
+    
+  padding-left: 20px;
+  margin: 20px 0 20px 0;
+  
+  position: relative;
+}
+
+.main-infos-line{
+  width: 200px;
+  height: 50px;
+  
+  border-left: 3px solid black;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-infos-d p{
+  width: 100%;
+  margin-top: 0;
+}
+
+.main-infos-m p{
+  width: 100%;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 750px) {
+  .main-infos-d{
+    display: none;
+  }
+  .main-infos-m{
+    display: flex;
+  }
+  .main-infos-box{
+    width: 230px;
+  }
+}
+
+
+
 
 
 
@@ -313,6 +418,9 @@ ul{
   
   line-height: 100px;
   font-size: 0.9em;
+  letter-spacing: 4px;
+  
+  margin-right: 100px;
 }
 
 a{

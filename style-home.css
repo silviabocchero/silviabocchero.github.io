@@ -401,6 +401,8 @@ section{
   
   position: absolute;
   z-index: 10;
+  
+  transition: opacity 300ms ease-out;
 }
 
 .projects-box-v-img-hover{

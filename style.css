@@ -8,7 +8,6 @@ html{
  
 body{
   margin: 0 auto;
-  min-width: 400px;
   height: auto;
   
   font-family: monospace;
@@ -38,7 +37,7 @@ footer{
   text-align: center;
 }
 
-main{
+.main{
   height: 100vh;
 }
 
@@ -71,15 +70,14 @@ p{
 }
 
 h3{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   font-weight: 200;
   letter-spacing: 2px;
   
-  font-size: 1.7em;
+  font-size: 1.3em;
   text-align: center;
   
   color: #aaa;
-  text-decoration: underline;  
   
   padding: 30px;
 }
@@ -200,7 +198,7 @@ section{
   padding-left: 30px;
 }
 
-main h1{
+.main h1{
   font-family: 'Anonymous Pro', monospace;
   
   font-weight: bold;
@@ -215,12 +213,12 @@ main h1{
 }
 
 .main-h1-secondary{
-  font-weight: 100;
-  font-size: 6.5em;
-  line-height: 0.8em;
+  font-weight: 100!important;
+  font-size: 6.5em!important;
+  line-height: 0.8em!important;
 }
 
-main h2{
+.main h2{
   text-align: left;
   font-size: 0.8em;
 }
@@ -237,9 +235,9 @@ main h2{
   
   width: 100%;
   height: auto;
-  background-color: red;
+  background-color: #F4F4F4;
   
-  padding-left: 40px;
+  padding: 10px 0 0 40px;
 }
 
 .main-infos-box{
@@ -283,6 +281,21 @@ main h2{
   }
   .main-infos-box{
     width: 230px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .main h1{
+    font-size: 6em!important;
+  }
+  .main-h1-secondary{
+    font-size: 4em!important;
+  }
+  .main-header{
+    padding-left: 0;
+  }
+  .main-infos-m{
+    padding-left: 10px;
   }
 }
 

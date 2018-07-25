@@ -21,10 +21,17 @@
   
   <!-- MONOSPACE FONTS SELECTION -->
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|VT323" rel="stylesheet">
+  
+    <!-- ICONS! -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+  
+  <!-- CAROUSEL -->
+  <link rel="stylesheet" href="dist/simpleSlider.min.css">
+  <script src="dist/simpleSlider.min.js"></script>
 
 
 </head>
-   
+  
 <body>
   
   <header>
@@ -41,7 +48,7 @@
   </header>
   
   <div class="main">
-      <!--<p class="main-header-pagename">&#9813 projects</p>-->
+    <!--<p class="main-header-pagename">&#9813 pro 01</p>-->
     
       <div class="main-header">
         <div class="main-titles">
@@ -54,7 +61,12 @@
         <div class="main-infos-d">
           <div class="main-infos-box">
             <div class="main-infos-line"></div>
-            <h7>2018<br>SPD PROJECT<br>GRAPHIC DESIGN</h7>
+            <h7>2018<br>UNIVERSITY PROJECT<br>by SPD, MILAN</h7>
+          </div>
+          <div class="main-infos-box">
+            <div class="main-infos-line"></div>
+            <h7>ROLE</h7>
+            <p>Designer</p>
           </div>
           <div class="main-infos-box">
             <div class="main-infos-line"></div>
@@ -65,13 +77,13 @@
         </div>
       </div>
     
-      <section class="main-img">
+      <div class="main-img">
         <img srcset="img/projects-thetrumpet/thetrumpet-hero2.jpg 1920w,
          img/projects-thetrumpet/thetrumpet-hero-m.jpg 900w"
        sizes="(max-width: 450px) 450px,
               1920px"
        src="img/projects-thetrumpet/thetrumpet-hero2.jpg" alt="!">      
-      </section>
+      </div>
   </div>
   
     <div class="main-infos-m">
@@ -81,17 +93,60 @@
       </div>
       <div class="main-infos-box">
         <div class="main-infos-line"></div>
+        <h7>ROLE</h7>
+        <p>Designer</p>
+      </div>
+      <div class="main-infos-box">
+        <div class="main-infos-line"></div>
         <h7>ABOUT</h7>
         <p>Creation of a strong visual identity for the luxury e-commerce The Trumpet.
         Naming, logo, website (e- commerce structure + editorial content + design).</p>
       </div>
     </div>
+  
+    <div class="separe">
+      <h3><strong>00.</strong> The project</h3>
+      
+      <div class="separe-container">
+        <ul class="separe-description">
+          <li><a href="#01">Corporate Identity</a></li>
+          <li><a href="#02">Landing Page</a></li>
+          <li><a href="#03">Editorial Homepage</a></li>
+        </ul>
+
+        <div class="separe-description">
+          <p><em>The Trumpet</em> is a  luxury e-commerce website. Not the “usual” luxury brand: it’s for bold people who want to shout out their bright personality to the world. <em>The Trumpet</em>  is the musical, strong voice they need.</p>
+        </div>
+      </div>
+    </div>
+  
+  <div class="parallax">
+    <style>
+      .parallax { 
+          /* The image used */
+          background-image: url(img/projects-thetrumpet/thetrumpet-hero2.jpg);
+
+          /* Set a specific height */
+          height: 500px; 
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+    </style>
+  </div>
 
   
+
   
   <div class="proj-container">
     
-    <h3>Corporate Identity</h3>
+    <div id="01" class="separe">
+      <h3><strong>01. </strong>Corporate Identity</h3>
+    </div>
+    
     
     <section class="container">
       <div class="half-text">
@@ -120,8 +175,9 @@
         <img class="centered-img" src="img/projects-thetrumpet/thetrumpet-corporate-fonts-combinations.png" width="1822" height="970">
     </section>
 
-    
-    <h3>Landing Page</h3>
+    <div id="02" class="separe">
+      <h3><strong>02. </strong>Landing Page</h3>
+    </div>
     
     <section class="container">
       <img class="bigger-img" src="img/projects-thetrumpet/thetrumpet-Manifesto.png" width="2862" height="1602">
@@ -131,11 +187,42 @@
       </div>
     </section>
     
-    <h3>Editorial Homepage</h3>
+    <div id="03" class="separe">
+    <h3><strong>03. </strong>Editorial Homepage</h3>
+    </div>
+    
     <section class="website-pages-container">
         <img class="website-page-desktop" src="img/projects-thetrumpet/thetrumpet-Homepage-Editorial-02.jpg" width="2668" height="12470">
         <img class="website-page-mobile" src="img/projects-thetrumpet/thetrumpet-Homepage-Editorial01.jpg" width="687" height="7723">
     </section>
+    
+    <!--
+    <div class="simple-slider simple-slider-first">
+      <div class="slider-wrapper">
+          <div class="slider-slide" style="background-image:url(img/projects-thetrumpet/thetrumpet-Homepage-Editorial-02.jpg);">
+              First slide
+          </div>
+
+          <div class="slider-slide" style="background-image: url(img/projects-thetrumpet/thetrumpet-Homepage-Editorial01.jpg);">
+              Second slide
+          </div>
+
+          <div class="slider-slide" style="background-image: url('https://placehold.it/1200x400');">
+              Third slide
+          </div>
+      </div>
+
+      <!--Pagination-->
+    <!--
+      <div class="slider-pagination"></div>
+
+      <!--Buttons-->
+    <!--
+      <div class="slider-btn slider-btn-prev"></div>
+      <div class="slider-btn slider-btn-next"></div>
+    </div>
+  -->
+    
 
     <section class="proj-img">
       <img srcset="img/projects-thetrumpet/thetrumpet-Website-footer.jpg 1920w,
@@ -147,8 +234,25 @@
   </div>
   
   <footer>
+    <a href="portfolio-enroute.html" class="footer-proj-link">
+      <i class="icon-arrow-left" href="#presentation"></i>
+      <p>previous proj</p>
+    </a>
+      
     <h5>&#9679;<br>THANKS</h5>
+    
+    <a href="portfolio-enroute.html" class="footer-proj-link">
+      <p>next proj</p>
+      <i class="icon-arrow-right" href="#presentation"></i>
+    </a>
   </footer>
+  
+
+  <!-- slider scripts -->
+  <script src="dist/simpleSlider.min.js"></script>
+  <script>
+      var slider = new simpleSlider('.simple-slider-first');
+  </script>
 
 </body>
   

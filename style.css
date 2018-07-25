@@ -34,12 +34,34 @@ header{
   z-index: 35;
 }
 
-footer{
-  text-align: center;
-}
 
 .main{
   height: 810px;
+}
+
+
+/* footer */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  text-align: center;
+  padding: 0 50px 0 50px;
+}
+
+.footer-proj-link{
+  display: flex;
+  color: gray;
+  
+  align-items: center;
+  justify-content: center;
+}
+
+footer p{
+  width: 100%;
+  margin: 0 20px 0 20px;
 }
 
 
@@ -74,14 +96,18 @@ p{
 h3{
   font-family: 'Anonymous Pro', monospace;
   font-weight: 200;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   
-  font-size: 1.3em;
-  text-align: center;
+  font-size: 0.8em;
+  text-align: left;
+  text-transform: uppercase;
   
   color: #aaa;
   
-  padding: 30px;
+  border-bottom: 3px solid #ddd;
+  
+  padding-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 h4{
@@ -122,6 +148,68 @@ h7{
 
 section{
 }
+
+.separe{
+  width: 100%;
+  height: auto;
+  
+  padding: 60px;
+}
+
+.separe-container{
+  display: flex;
+}
+
+.separe-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 50%;
+}
+
+.separe ul{
+  padding: 0;
+  margin: 0;
+
+  list-style-type: none;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+  font-size: 0.9em;
+  line-height: 2em;
+  
+  margin-left: 35px;
+  padding-left: 10px;
+  border-left: 1px solid gray;
+  color: gray;
+  
+  height: 100px;
+}
+
+.separe h4{
+  margin-top: 0;
+  
+  font-size: 1.5em;
+  letter-spacing: 20px;
+}
+
+.separe p{
+  width: 100%;
+  
+  font-family: "Playfair Display";
+  font-size: 1.5em;
+  
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.separe a{
+  color: gray;
+}
+
+
 
 .proj-container{
   position: relative;
@@ -189,12 +277,12 @@ section{
   transform: translate(-50%, -50%);
   z-index: -20;
   
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .main-header-pagename{
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 50%;
   
   color: grey;
@@ -235,6 +323,8 @@ section{
 .main-infos-d{
   display: flex;
   flex-direction: column;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .main-infos-m{
@@ -254,7 +344,7 @@ section{
 
 .main-infos-box{
   text-align: left;
-  width: 200px;
+  max-width: 300px;
   height: auto;
     
   padding-left: 20px;
@@ -283,6 +373,10 @@ section{
   width: 100%;
   margin-top: 0;
 }
+
+
+/* menu */
+.
 
 
 
@@ -332,6 +426,7 @@ section{
   width: 60%;
   height: auto;
 }
+
 
 /* single images / bg image options */
 
@@ -389,6 +484,8 @@ section{
   align-items: flex-start;
   
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    margin-top: 10px;
+
 }
 
 .website-page-mobile{
@@ -398,13 +495,15 @@ section{
   align-items: flex-start;
   
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  
+  margin-top: 10px;
 }
 
 
 /* LIST-LINKS */
 
 
-ul{
+nav ul{
   padding: 0;
   margin: 0;
 
@@ -437,6 +536,11 @@ li:hover{
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 1024px) {
+  .separe{
+    padding-bottom: 0;
+  }
+}
 
 @media screen and (max-width: 850px) {
   /* container projects */
@@ -481,6 +585,58 @@ li:hover{
   }
 }
 
+@media screen and (max-width: 415px) {
+  .half-text, .smaller-text{
+    width: 100%;
+    align-items: flex-start;
+    padding: 0 10px 0 20px;
+  }
+  .half-text p, .smaller-text p{
+    width: 100%;
+  }
+  .container{
+    padding: 10px 0 10px 0;
+  }
+  .separe{
+    padding: 50px 20px 0 20px;
+    margin-bottom: 0;
+  }
+  h3{
+    margin: 0;
+  }
+  footer{
+    padding: 0 20px 0 20px;
+  }
+  footer p{
+    display: none;
+  }
+  .separe-container{
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .separe-description{
+    flex-basis: 100%;
+  }
+  .separe ul{
+    margin: 0;
+    height: 100%;
+  }
+  .separe p{
+    margin-top: 20px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+  }
+  p{
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+  h4{
+    font-size: 1.3em;
+    line-height: 0;
+    margin-top: 50px;
+  }
+}
+
 
 /* main 
 @media screen and (max-width: 1024px) {
@@ -516,7 +672,13 @@ li:hover{
         padding-left: 0;
       }
       .main-infos-m{
-        padding-left: 10px;
+        padding-left: 20px;
+      }
+      .website-pages-container{
+        margin-top: 50px;
+      }
+      .main{
+        height: 736px;
       }
     }
 

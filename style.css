@@ -269,7 +269,21 @@ section{
   z-index: -30;
 }
 
-.main-img img {
+.main-img-black{
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: -30;
+  
+  background-color: black;
+}
+
+.black-bg{
+  color: white!important;
+}
+
+.main-img img, .main-img-black img{
   height: 100%;
   position: absolute;
   top: 50%;
@@ -278,6 +292,10 @@ section{
   z-index: -20;
   
   opacity: 0.2;
+}
+
+.opacity3{
+  opacity: 0.3!important;
 }
 
 .main-header-pagename{

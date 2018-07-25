@@ -421,6 +421,7 @@ section{
   flex-flow: column wrap;
   
   opacity: 0;
+  transition: opacity 300ms;
 }
 
 .projects-box-h-hover{
@@ -456,6 +457,8 @@ section{
   
   padding: 30px 0 0 10px ;
   opacity: 0;
+
+  transition: opacity 300ms;
 }
 
 
@@ -668,6 +671,7 @@ h5{
   color: white;
   
   margin: 0;
+  transition: opacity 500ms;
 }
 
 .p-projects{

@@ -373,13 +373,15 @@ body{
 }
 
 header{
-  height: 60px;
+  height: 50px;
   width: 100%;
-    
-  background-color: rgba(255, 255, 255, 0.8);
+  /*
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  background-color: white;
+  */
   
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   
   font-family: 'Barlow Condensed', sans-serif;
@@ -388,8 +390,9 @@ header{
   
   position: fixed;
   
-  z-index: 20;
+  z-index: 35;
 }
+
 
 footer{
   text-align: center;
@@ -452,7 +455,7 @@ h1{
 }
 
 h2{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   font-weight: 200;
   letter-spacing: 2px;
   
@@ -462,26 +465,24 @@ h2{
 
 p{
   width: 60%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   
-  font-size: 0.9em;
-  line-height: 1.8em;
+  font-size: 0.8em;
+  line-height: 1.7em;
 }
 
 h3{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   font-weight: 200;
   letter-spacing: 2px;
   
-  font-size: 1.7em;
+  font-size: 1.3em;
   text-align: center;
   
   color: #aaa;
-  text-decoration: underline;  
   
   padding: 30px;
 }
-
 
 h4{
   font-family: 'Barlow Condensed', sans-serif;
@@ -492,11 +493,27 @@ h4{
 
 h5{
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 5px;
   
   font-size: 1em;
   line-height: 1.8em;
+}
+
+h6{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 00;
+  letter-spacing: 5px;
+  
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+h7{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.8;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .white{
@@ -522,7 +539,7 @@ ul{
 
 a{
   text-decoration: none;
-  color: black;
+  color: white;
   
   margin-right: 30px;
 }

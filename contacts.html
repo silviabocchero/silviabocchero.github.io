@@ -39,43 +39,27 @@
       </ul>
     </nav>
     
-    <nav role="navigation" class="nav-mobile">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
-
-        <!--
-        Some spans to act as a hamburger.
-
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
-
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu">
-          <a href="index.html" class="a-nav-mobile"><li>Home</li></a>
-          <a href="projects.html" class="a-nav-mobile"><li>Projects</li></a>
-          <a href="about.html" class="a-nav-mobile"><li>About</li></a>
-          <a href="contacts.html" class="a-nav-mobile"><li>Contacts</li></a>
-          
-          <section class="menu-contacts-socials-container">
-            <a href="https://www.behance.net/silviabocchero"><i class="fab fa-behance"></i></a>
-            <a href="https://www.facebook.com/solebianco.sb/?ref=bookmarks"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/solebianco.sb/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/silvia-bocchero-6a414b151/"><i class="fab fa-linkedin-in"></i></a>
-          </section>
-        </ul>
-      </div>
-    </nav>
+    <!-- NAV MOBILE -->
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+      <section class="menu-contacts-socials-container">
+        <a href="https://www.behance.net/silviabocchero" target="_blank"><i class="fab fa-behance"></i></a>
+        <a href="https://www.facebook.com/solebianco.sb/?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/solebianco.sb/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/silvia-bocchero-6a414b151/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </section>
+    </div>
     
   </header>
   

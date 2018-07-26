@@ -95,7 +95,10 @@ footer{
     top: 15px;
     left: auto;
     right: 20px;
-  }   
+  }
+  .pres{
+    flex-direction: column;
+  }
 }
   
 

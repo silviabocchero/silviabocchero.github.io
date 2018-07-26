@@ -5,7 +5,7 @@
 body{
   margin: 0 auto;
   /* make sure it occupies at least the whole height of the browser */
-  min-height: 100vh;
+  min-height: 100%;
   
   background-color: black;
   background-image:url(img/projects-solarsystem/stars-gif-2.gif);
@@ -794,6 +794,20 @@ li:hover{
 @media screen and (max-width: 530px) {
   nav {
       display: none;
+  }
+  body{
+    width: 100%;
+  }
+  .solarsystem-container{
+    transform: scale(.40);
+  }
+  .solarsystem{
+    width: 910px;
+    min-height: 300px;
+    margin: 0!important;
+  }
+  .sunset-container{
+    transform: scale(.60);
   }
 }
 

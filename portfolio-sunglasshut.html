@@ -22,8 +22,8 @@
   <!-- MONOSPACE FONTS SELECTION -->
   <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i|IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i|VT323" rel="stylesheet">
   
-    <!-- ICONS! -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+  <!-- ICONS! -->  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   
   <!-- CAROUSEL -->
   <link rel="stylesheet" href="dist/simpleSlider.min.css">
@@ -35,9 +35,9 @@
 <body>
   
   <header>
-    <a href="index.html"><img class="logo-3" src="img/logo-style02.png" alt="Logo Silvia Bocchero" height="408" width="104"></a>
+    <a href="index.html"><img class="logo-link" src="img/logo-style02.png" alt="Logo Silvia Bocchero" width="408" height="104"></a>
     
-    <nav>
+    <nav class="nav-desktop">
       <ul>
         <li><a href="projects.html">PROJECTS</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -47,32 +47,56 @@
     
   </header>
   
+    <!-- NAV MOBILE -->
+  <div class="hamburger-stop">
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+      <section class="menu-contacts-socials-container">
+        <a href="https://www.behance.net/silviabocchero" target="_blank"><i class="fab fa-behance"></i></a>
+        <a href="https://www.facebook.com/solebianco.sb/?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/solebianco.sb/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/silvia-bocchero-6a414b151/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </section>
+    </div>
+  </div>
+  
   
   <div class="main">
     <!--<p class="main-header-pagename">&#9813 pro 01</p>-->
     
       <div class="main-header">
-        <div class="main-titles">
+        <div class="main-titles animate-hero">
           <h1>SUN-<br>GLASS<br>HUT</h1>
-          <h1 class="main-h1-secondary">WEB<br>-SITE</h1>
+          <h1 class="main-h1-secondary animate-hero">WEB<br>-SITE</h1>
           <h2>UX Design &#8889 Ui Design  &#8889 Prototyping</h2>
           <!-- &#8756 &#8757 &#8903 &#8889 &#8729 &#8728 manine &#9759 &#9758 &#9756 whiteSun &#9788 chess queen&king &#9813 &#9812 -->
         </div>
         
         <div class="main-infos-d">
-          <div class="main-infos-box">
+          <div class="main-infos-box animate-2">
             <div class="main-infos-line"></div>
             <h7>2018<br>SPD + LUXOTTICA<br>COORDINATOR:</h7>
             <p>Marco Catani</p>
           </div>
-          <div class="main-infos-box">
+          <div class="main-infos-box animate-2">
             <div class="main-infos-line"></div>
             <h7>GROUP PROJECT</h7>
             <p>Silvia Bocchero, Guillaume Luhriri, Buth Vathanagul, Marian StLaurent</p>
             <h7>ROLE</h7>
             <p>Ux designer, Ui designer</p>
           </div>
-          <div class="main-infos-box">
+          <div class="main-infos-box animate-2">
             <div class="main-infos-line"></div>
             <h7>ABOUT</h7>
             <p>Redesign the e-commerce website sunglasshut.com to reposition the brand: SGH should become the authority of the premium sunglasses category, promoting the most fashionable brands.</p>
@@ -109,9 +133,9 @@
 
     <div class="separe-container">
       <ul class="separe-description">
-        <li><a href="#01">Corporate Identity</a></li>
-        <li><a href="#02">Landing Page</a></li>
-        <li><a href="#03">Editorial Homepage</a></li>
+        <li><a href="#01" class="animate-3">Research</a></li>
+        <li><a href="#02" class="animate-3">Website Structure</a></li>
+        <li><a href="#03" class="animate-3">Website Prototype</a></li>
       </ul>
 
       <div class="separe-description">
@@ -125,7 +149,7 @@
     <style>
       .parallax { 
           /* The image used */
-          background-image: url(img/projects-thetrumpet/thetrumpet-hero2.jpg);
+          background-image: url(img/projects-sgh/sgh-mockup2.jpg);
 
           /* Set a specific height */
           height: 500px; 
@@ -145,104 +169,105 @@
   <div class="proj-container">
     
     <div id="01" class="separe">
-      <h3><strong>01. </strong>Corporate Identity</h3>
+      <h3><strong>01. </strong>Research: </h3>
     </div>
     
-    
-    <section class="container">
-      <div class="half-text">
-        <h4>NAMING & LOGO</h4>
-        <p>The condensed look and delicate letters make the logo high-class and neat. The extreme extended letters recalls the image of a trumpet, with its long and neat elements. There’s an additional delicate reference to the trumpet’s bell in the upper-case “T”.<br><br>The pictogram it’s designed by playing with “the Trumpet” letters, selecting the most representative ones: the “t”s.</p>
+    <section class="container full">
+      <h4>COMPETITORS BENCHMARKING</h4>
+      <div class="full-text">
+        <p>Look at the storytelling strategies of e-commerce mavericks.</p>
+        <p>Leverage sector intelligence from eyewear conglomerates.</p>
       </div>
-        <img class="half-img" src="img/projects-thetrumpet/thetrumpet-corporate-logos.png" width="1308" height="682">
+      <img class="full-img" src="img/projects-sgh/sgh-benchmarking.jpg" width="1852" height="666">
     </section>
     
-    <section class="container">
-      <div class="half-text">
-        <h4>SPACE-AREA & PALETTE</h4>
+    <section class="container full">
+      <h4>WHAT DEFINES A PREMIUM PERCEPTION?</h4>
+      <div class="full-text">
+        <p><strong>Time</strong><br>Opportunities for presenting updated product stock / collections raises premium perception by drawing attention to SGH as an e-commerce aggregator brand. Numbers and content that mark change also convey a perception of timeliness.</p>
+        <p><strong>Typography</strong><br>More gender neutral and refined  typographic choices can help reposition the brand by balancing feminine and residual </p>
+        <p><strong>Brand Curation</strong><br>Premium players in E-Commerce are engaging as expert brand curators unique product stories. One of the key ingredient to reach this goal is to provide curated content, contextualizing the different products the website sells, instead of simply listing them over a white limbo.</p>
       </div>
-        <img class="half-img" src="img/projects-thetrumpet/thetrumpet-corporate-space.png" width="1816" height="870">
     </section>
     
-    <section class="container">
-      <div class="half-text">
-        <h4>FONTS COMBINATIONS</h4>
-        <p>Create a visual connection with the condensed logo’s font. Readable fonts + contrast:  light/bold, serif/sans-serif, classy/modern.<br><br>h: Oswald<br>h: Playfair Display<br>p: Adobe Garamond Pro</p>
-      </div>
-        <img class="half-img" src="img/projects-thetrumpet/thetrumpet-corporate-fonts.png" width="1598" height="1048">
-    </section>
-    
-    <section class="container">
-        <img class="centered-img" src="img/projects-thetrumpet/thetrumpet-corporate-fonts-combinations.png" width="1822" height="970">
-    </section>
-
     <div id="02" class="separe">
-      <h3><strong>02. </strong>Landing Page</h3>
+      <h3><strong>02. </strong>Website structure</h3>
     </div>
     
-    <section class="container">
-      <img class="bigger-img" src="img/projects-thetrumpet/thetrumpet-Manifesto.png" width="2862" height="1602">
-      <div class="smaller-text">
-        <h4>THE MANIFESTO</h4>
-        <p>The colours are bright, eccessive, complementary; they create an almost shocking effect. Together they have a strong personality. The sections seem to overlap. “Modern manifesto” hyphenation is intentionally wrong, to play with words and the concept of being unconventional, breaking all rules. </p>
+    <section class="container full">
+      <h4>LANGUAGE HIERARCHY</h4>
+      <div class="full-text">
+        <p><strong>01.</strong><br>Find & Explore</p>
+        <p><strong>02.</strong><br>Filter, Browse, Shop&Read, Share</p>
+        <p><strong>03.</strong><br>Choose, Customise, Commit</p>
       </div>
     </section>
+  
     
-    <div id="03" class="separe">
-    <h3><strong>03. </strong>Editorial Homepage</h3>
-    </div>
-    
-    <section class="website-pages-container">
-        <img class="website-page-desktop" src="img/projects-thetrumpet/thetrumpet-Homepage-Editorial-02.jpg" width="2668" height="12470">
-        <img class="website-page-mobile" src="img/projects-thetrumpet/thetrumpet-Homepage-Editorial01.jpg" width="687" height="7723">
-    </section>
-    
-    <!--
+
     <div class="simple-slider simple-slider-first">
       <div class="slider-wrapper">
-          <div class="slider-slide" style="background-image:url(img/projects-thetrumpet/thetrumpet-Homepage-Editorial-02.jpg);">
-              First slide
+          <div class="slider-slide" style="background-image:url(img/projects-sgh/sgh-page1.jpg);">
+              <h4>// HOMEPAGE</h4>
           </div>
-
-          <div class="slider-slide" style="background-image: url(img/projects-thetrumpet/thetrumpet-Homepage-Editorial01.jpg);">
-              Second slide
+          <div class="slider-slide" style="background-image:url(img/projects-sgh/sgh-page2.jpg);">
+              <h4>// HOMEPAGE</h4>
           </div>
-
-          <div class="slider-slide" style="background-image: url('https://placehold.it/1200x400');">
-              Third slide
+          <div class="slider-slide" style="background-image:url(img/projects-sgh/sgh-page3.jpg);">
+              <h4>// HOMEPAGE</h4>
+          </div>
+          <div class="slider-slide" style="background-image:url(img/projects-sgh/sgh-page4.jpg);">
+              <h4>PLP MAN</h4>
+          </div>
+          <div class="slider-slide" style="background-image:url(img/projects-sgh/sgh-page5.jpg);">
+              <h4>PLP DETAILS</h4>
+          </div>
+          <div class="slider-slide" style="background-image:url(img/projects-sgh/sgh-page6.jpg);">
+              <h4>BRAND PAGE</h4>
+          </div>
+          <div class="slider-slide" style="background-image:url(img/projects-sgh/sgh-page7.jpg);">
+              <h4>PDP</h4>
+          </div>
+          <div class="slider-slide" style="background-image:url(img/projects-sgh/sgh-page8.jpg);">
+              <h4>TILES</h4>
           </div>
       </div>
 
       <!--Pagination-->
-    <!--
       <div class="slider-pagination"></div>
 
       <!--Buttons-->
-    <!--
       <div class="slider-btn slider-btn-prev"></div>
       <div class="slider-btn slider-btn-next"></div>
     </div>
-  -->
-    
 
-    <section class="proj-img">
-      <img srcset="img/projects-thetrumpet/thetrumpet-Website-footer.jpg 1920w,
-             img/projects-thetrumpet/thetrumpet-Website-footer-mobile.jpg 900w"
-           sizes="(max-width: 450px) 450px,
-                  1920px"
-           src="img/projects-thetrumpet/thetrumpet-Website-footer.jpg" alt="!">
-    </section> 
+
+    <div id="02" class="separe help">
+      <h3><strong>03. </strong>Website Prototype</h3>
+    </div>
+    
+    <section class="container full">
+      <div class="full-text">
+        <a href="https://adobe.ly/2uDzfrj">Desktop</a>
+        <a href="https://adobe.ly/2myb1uc">Mobile</a>
+      </div>
+    </section>
   </div>
   
+    <section class="proj-img">
+      <img src="img/projects-sgh/sgh-footer.jpg" alt="!">
+    </section> 
+
+  
   <footer>
-    <a href="portfolio-enroute.html" class="footer-proj-link">
+    <a href="portfolio-thetrumpet.html" class="footer-proj-link animate-title">
       <i class="icon-arrow-left" href="#presentation"></i>
       <p>previous proj</p>
     </a>
       
-    <h5>&#9679;<br>THANKS</h5>
+    <h5 class="animate-title">&#9679;<br>THANKS</h5>
     
-    <a href="portfolio-enroute.html" class="footer-proj-link">
+    <a href="portfolio-solar-system.html" class="footer-proj-link animate-title">
       <p>next proj</p>
       <i class="icon-arrow-right" href="#presentation"></i>
     </a>
@@ -254,7 +279,18 @@
   <script>
       var slider = new simpleSlider('.simple-slider-first');
   </script>
-
+  
+  <!-- animation scripts -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script>
+    // JavaScript
+    window.sr = ScrollReveal();
+    sr.reveal('.animate-2', { duration: 2000 }, 80);
+    sr.reveal('.animate-hero', { duration: 1500 }, 150);
+    
+    sr.reveal('.animate-title', { duration: 2000 }, 100);
+    sr.reveal('.animate-3', { duration: 2000 }, 150);
+  </script>
 </body>
   
 </html>

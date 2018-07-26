@@ -18,14 +18,19 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet"> 
   
+  <!-- ICONS! -->  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  
 </head>
   
 <body>
   
   <header>
-    <a href="index.html"><img class="logo-3" src="img/logo-style02-white.png" alt="Logo Silvia Bocchero" height="408" width="104"></a>
+    <a href="index.html"><img class="logo-link" src="img/logo-style02-white.png" alt="Logo Silvia Bocchero" width="408" height="104"></a>
     
-    <nav>
+    <!-- NAV DESKTOP -->
+    <nav class="nav-desktop">
       <ul>
         <li><a href="projects.html">PROJECTS</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -34,6 +39,31 @@
     </nav>
     
   </header>
+  
+  <!-- NAV MOBILE -->
+  <div class="hamburger-stop">
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
+      <section class="menu-contacts-socials-container">
+        <a href="https://www.behance.net/silviabocchero" target="_blank"><i class="fab fa-behance"></i></a>
+        <a href="https://www.facebook.com/solebianco.sb/?ref=bookmarks" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/solebianco.sb/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/silvia-bocchero-6a414b151/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </section>
+    </div>
+  </div>
+
   
   <main>
     
@@ -110,7 +140,17 @@
 
   
   <footer>
-    <h5 class="white">&#9679;<br>THANKS</h5>
+    <a href="portfolio-sunglasshut.html" class="footer-proj-link animate-title">
+      <i class="icon-arrow-left" href="#presentation"></i>
+      <p>previous proj</p>
+    </a>
+      
+    <h5 class="animate-title">&#9679;<br>THANKS</h5>
+    
+    <a href="portfolio-illustration.html" class="footer-proj-link animate-title">
+      <p>next proj</p>
+      <i class="icon-arrow-right" href="#presentation"></i>
+    </a>
   </footer>
 
 </body>

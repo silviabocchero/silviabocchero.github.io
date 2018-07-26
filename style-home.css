@@ -449,14 +449,18 @@ section{
   background-image:url(img/projects-thetrumpet/thetrumpet-00.png);
 }
 
-.projects-box-enroute{
-  background-image: url(img/projects-enroute/enroute-00.jpg);
+.projects-box-sgh{
+  background-image: url(img/projects-sgh/sgh-hero.jpg);
   opacity: 0.7;
 }
 
 .projects-box-solarsystem{
   background-image: url(img/projects-solarsystem/stars-gif-1.gif);
   opacity: 0.9;
+}
+
+.projects-box-illustrations{
+  background-image: url(img/projects-illustrations/illu-hero.jpg);
 }
 
 
@@ -562,6 +566,13 @@ h1{
   letter-spacing: 0.1em;
   
   text-decoration: none;
+  
+  padding: 0 60px 0 60px;
+}
+
+.h1-homepage a:hover{
+  text-decoration: underline;
+  color: #FFCE00;
 }
 
 @media screen and (max-width: 800px) {
@@ -658,6 +669,31 @@ h5{
   margin-left: 15px;
 }
 
+.h1-projects2{
+  font-size: 5em;
+  line-height: 1em;
+    
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+  
+  margin: 0;
+  transition: opacity 500ms;
+  display: none;
+}
+
+.p-projects2{
+  color: white;
+  font-size: 0.7em;
+  letter-spacing: 3px;
+  
+  margin-left: 15px;
+  display: none;
+}
+
+.titles-mobile-container{
+  display: none;
+}
 
 
 /* LIST-LINKS */
@@ -745,6 +781,7 @@ li:hover{
   .projects-box-v-img{
     width: 100%;
     height: 700px;
+    opacity: 0.5!important;
   }
   
   .projects-box-h{
@@ -764,15 +801,44 @@ li:hover{
     opacity: 0;
   }
   .projects-box-v-img-hover:hover{
-  opacity: 0;
+  opacity: 1;
   }
   .projects-box-h-hover{
     display: none;
     opacity: 0;
   }
   .projects-box-h-img-hover:hover{
-  opacity: 0;
+  opacity: 1;
   }
+  
+  .titles-mobile-container{
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    z-index: 299;
+    
+    padding: 20px;
+    
+    width: 100%;
+  }
+  .h1-mobile{
+    font-size: 5em;
+    line-height: 1em;
+    font-weight: bold;
+
+    font-style: italic;
+    text-decoration: none;
+
+    margin: 0;
+  }
+
+  .p-mobile{
+    font-size: 0.7em;
+    letter-spacing: 3px;
+    font-weight: 400;
+  }
+  
+  
   
   /* other elements */
   .home-line{

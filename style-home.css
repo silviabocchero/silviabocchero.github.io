@@ -23,6 +23,22 @@ header{
   position: fixed;
 }
 
+#presentation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pres{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pres p{
+  padding: 0 20px;
+}
 
 .nav-desktop{
   height: 100vh;
@@ -559,11 +575,11 @@ h1{
 }
 
 .h1-homepage{
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Playfair Display';
   
-  font-size: 4em;
+  font-size: 2em;
   font-weight: 100;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   
   text-decoration: none;
   
@@ -607,11 +623,12 @@ h2{
 }
 
 p{
-  width: 60%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Anonymous Pro', monospace;
   
-  line-height: 1.8em;
+  font-size: 0.8em;
+  line-height: 1.7em;
 }
+
 
 .proj-info p{
   font-size: 0.9em;
@@ -838,7 +855,13 @@ li:hover{
     font-weight: 400;
   }
   
-  
+  /* ABOUT */
+  .about-img{
+    width: 100%;
+    height: auto;
+    margin: 0 0 100px 0;
+  }
+
   
   /* other elements */
   .home-line{

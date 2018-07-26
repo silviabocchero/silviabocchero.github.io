@@ -606,7 +606,6 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 
 body{
   margin: 0 auto;
-  min-width: 400px;
   
   font-family: sans-serif;
 }
@@ -790,6 +789,50 @@ li:hover{
 
 /* MEDIA QUERIES */
 
+.prova{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  overflow: hidden;
+  height: auto;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .solarsystem-container{
+    margin-top: 0;
+    transform: scale(.90);
+  }
+  .solarsystem{
+  }
+  footer{
+    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 910px) {
+  nav {
+    display: none;
+  }
+  body{
+    width: 100%;
+  }
+  .solarsystem-container{
+    transform: scale(.70);
+  }
+  .solarsystem{
+    width: 910px;
+    min-height: 300px;
+    margin: 200px 0 0 350px;
+  }
+  .sunset-container{
+    transform: scale(.60);
+    margin-top: 50px!important;
+  }
+}
 
 @media screen and (max-width: 530px) {
   nav {
@@ -800,6 +843,7 @@ li:hover{
   }
   .solarsystem-container{
     transform: scale(.40);
+    margin-left: 150px;
   }
   .solarsystem{
     width: 910px;
